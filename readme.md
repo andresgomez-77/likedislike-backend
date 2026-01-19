@@ -1,5 +1,9 @@
 #  Like/Dislike - Backend API
 
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-6DB33F?style=for-the-badge&logo=springboot)
+![Java](https://img.shields.io/badge/Java-17-007396?style=for-the-badge&logo=java)
+![MongoDB](https://img.shields.io/badge/MongoDB-6.0-47A248?style=for-the-badge&logo=mongodb)
+
 API RESTful para sistema de votación de personajes con integración de múltiples fuentes (Rick & Morty, Pokémon, Superhéroes) y sistema de recomendaciones basado en preferencias del usuario.
 
 ## Front-End: https://github.com/andresgomez-77/LikeDislike
