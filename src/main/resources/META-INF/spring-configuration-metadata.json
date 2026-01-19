@@ -1,0 +1,31 @@
+{
+  "groups": [
+    {
+      "name": "api",
+      "type": "AG.LikeDislike.configurador.ApiProperties",
+      "sourceType": "AG.LikeDislike.configurador.ApiProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "api.rick-morty.base-url",
+      "type": "java.lang.String",
+      "description": "Rick and Morty API base URL"
+    },
+    {
+      "name": "api.pokemon.base-url",
+      "type": "java.lang.String",
+      "description": "Pokemon API base URL"
+    },
+    {
+      "name": "api.superhero.base-url",
+      "type": "java.lang.String",
+      "description": "Superhero API base URL"
+    },
+    {
+      "name": "api.superhero.access-token",
+      "type": "java.lang.String",
+      "description": "Superhero API access token"
+    }
+  ]
+}
