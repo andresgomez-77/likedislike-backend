@@ -3,6 +3,7 @@ package AG.LikeDislike.configurador;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.cors.CorsConfiguration;
@@ -12,21 +13,21 @@ import org.springframework.web.filter.CorsFilter;
 @Configuration
 public class CorsConfig {
 
+    @Value("${CORS_ALLOWED_ORIGINS}")
+    private String allowedOrigins;
+
     @Bean
     public CorsFilter corsFilter() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
 
         // Allow credentials
-        config.setAllowCredentials(true);
+        config.setAllowCredentials(false);
 
         // Allow specific origins (add your frontend URLs)
-        config.setAllowedOrigins(Arrays.asList(
-                "http://localhost:3000",
-                "http://localhost:5173",
-                "http://localhost:4200"
-        ));
-
+        List<String> origins = Arrays.asList(allowedOrigins.split(","));
+        config.setAllowedOrigins(origins);
+        System.out.println("🌐 CORS configurado para: " + origins);
         // Allow all headers
         config.setAllowedHeaders(List.of("*"));
 
@@ -43,7 +44,8 @@ public class CorsConfig {
         // Expose headers
         config.setExposedHeaders(Arrays.asList(
                 "Authorization",
-                "Content-Type"
+                "Content-Type",
+                "X-Total-Count"
         ));
 
         // Max age for preflight requests
