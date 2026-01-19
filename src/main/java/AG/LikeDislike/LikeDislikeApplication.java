@@ -17,7 +17,7 @@ public class LikeDislikeApplication {
         log.info("=".repeat(60));
 
         // 🔍 DEBUG: Ver qué URI está usando
-        String mongoUri = System.getenv("MONGODB_URI");
+        String mongoUri = System.getenv("SPRING_DATA_MONGODB_URI");
         System.out.println("================================================");
         System.out.println("🔍 MONGODB_URI desde variable de entorno:");
         System.out.println(mongoUri != null ? mongoUri : "❌ NO ENCONTRADA");
