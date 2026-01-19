@@ -6,9 +6,11 @@
 
 API RESTful para sistema de votación de personajes con integración de múltiples fuentes (Rick & Morty, Pokémon, Superhéroes) y sistema de recomendaciones basado en preferencias del usuario.
 
+## Front-End: https://github.com/andresgomez-77/LikeDislike
+
 ---
 
-## 📋 Tabla de Contenidos
+## Tabla de Contenidos
 
 - [Características](#-características)
 - [Stack Tecnológico](#-stack-tecnológico)
