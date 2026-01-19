@@ -16,6 +16,13 @@ public class LikeDislikeApplication {
         log.info("Iniciando Aplicacion LikeDislike...");
         log.info("=".repeat(60));
 
+        // 🔍 DEBUG: Ver qué URI está usando
+        String mongoUri = System.getenv("MONGODB_URI");
+        System.out.println("================================================");
+        System.out.println("🔍 MONGODB_URI desde variable de entorno:");
+        System.out.println(mongoUri != null ? mongoUri : "❌ NO ENCONTRADA");
+        System.out.println("================================================");
+
         SpringApplication.run(LikeDislikeApplication.class, args);
 
         log.info("=".repeat(60));
