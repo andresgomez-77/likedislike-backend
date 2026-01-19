@@ -10,26 +10,6 @@ API RESTful para sistema de votación de personajes con integración de múltipl
 
 ---
 
-## Tabla de Contenidos
-
-- [Características](#-características)
-- [Stack Tecnológico](#-stack-tecnológico)
-- [Requisitos Previos](#-requisitos-previos)
-- [Instalación](#-instalación)
-- [Configuración](#-configuración)
-- [Ejecución](#-ejecución)
-- [Estructura del Proyecto](#-estructura-del-proyecto)
-- [Endpoints de la API](#-endpoints-de-la-api)
-- [Modelos de Datos](#-modelos-de-datos)
-- [APIs Externas](#-apis-externas)
-- [Sistema de Recomendaciones](#-sistema-de-recomendaciones)
-- [Base de Datos](#-base-de-datos)
-- [Testing](#-testing)
-- [Troubleshooting](#-troubleshooting)
-- [Licencia](#-licencia)
-
----
-
 ##  Características
 
 -  **Integración con 3 APIs externas**: Rick & Morty, PokéAPI, Superhero API
