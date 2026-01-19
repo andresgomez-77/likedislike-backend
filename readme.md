@@ -233,7 +233,6 @@ likedislike-backend/
 │   │   │   └── LikeDislikeApplication.java 
 │   │   └── resources/
 │   │       ├── application.properties      
-│   │       └── application-prod.properties 
 │   └── test/
 │       └── java/                  
 ├── pom.xml                        
