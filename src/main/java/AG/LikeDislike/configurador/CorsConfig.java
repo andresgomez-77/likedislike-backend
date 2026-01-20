@@ -13,7 +13,7 @@ import org.springframework.web.filter.CorsFilter;
 @Configuration
 public class CorsConfig {
 
-    @Value("${CORS_ALLOWED_ORIGINS}")
+    @Value("${cors.allowed.origins:http://localhost:5173}")
     private String allowedOrigins;
 
     @Bean
@@ -27,7 +27,7 @@ public class CorsConfig {
         // Allow specific origins (add your frontend URLs)
         List<String> origins = Arrays.asList(allowedOrigins.split(","));
         config.setAllowedOrigins(origins);
-        System.out.println("🌐 CORS configurado para: " + origins);
+        System.out.println("CORS configurado para: " + origins);
         // Allow all headers
         config.setAllowedHeaders(List.of("*"));
 
