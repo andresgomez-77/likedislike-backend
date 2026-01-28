@@ -67,3 +67,5 @@ buildNumber.properties
 application-local.properties
 # Spring Boot
 HELP.md
+
+run-local.bat
